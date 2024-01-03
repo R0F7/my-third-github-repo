@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.external{
+    background:rgb(192, 123, 32);
+    color: rgb(226, 236, 238);
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.module-two-list{
+    margin-left: 70px;
+    font-size: 19px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.module-two-list ol li{
+    margin: 5px 0px;
+    font-weight: 800;
+}
+.module-two-list ul{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.module-two-list ol li ul li{
+    font-weight: 400;
+
+}
+h1,p{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#id-one{
+    color: salmon;
+}
+.bg-test-blog{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.blog{
+    margin: 20px 0px;
+}
+.blog h4{
+    font-size: 25px;
+    margin-left: 5px;
+    border-bottom: 3px solid ;
+    display: inline-block;
+    padding-bottom: 7px;
+}
+.blog p{
+    font-size: 17px;
+}
+.bg-image{
+    width: 400px;
+    height: 200px;
+    background-image: url('./image/undraw_heatmap_uyye.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.another-div{}
+.another-div h4{
+    background: #000;
+    color:aqua;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-left: 15px;
+    border-radius: 7px;
+}
+.another-div p{
+    font-size: 19px;
+    border-bottom: 3px solid aqua;
+    padding-bottom: 7px;
+    margin-left: 15px;
+}

@@ -1,0 +1,225 @@
+2.1--->
+
+css -->> cascading style sheets
+===============================
+cascading = jhornar moto kichu ja protiniyoto probahito hocche 
+style = styling korano bojhay 
+sheets = document type er kichu bojhay
+
+css mulot html tag gulo k ek vinno dhormi rup oyshorzo prodan kore
+
+css rules :
+-----------
+
+selector             declaration
+---------           -------------
+  tag              property : value 
+   p                 color  :  red
+Example : p { color : red}
+
+css type : 
+
+1. Inline css 
+--------------
+html tag er vitor j css lekha hoy tak inline css bole
+Example : <p style="color: brown;">I'm inline css</p>
+
+2.Internal css
+--------------
+html file a head a style tag er vitor j css lekha hoy tak Internal css bole
+Example : 
+<html>
+   <head>
+
+    <style>
+        p{
+            color: aqua;
+        }
+    </style>
+   </head>
+   <body>
+    
+   </body>
+</html>
+
+3.External css
+--------------- 
+shudhu css er jonno alada vabe file create kore tate css lekhe use kora k External css bole
+Example : 
+style.css <!-- css file name -->
+p{
+    color : red ;  <!-- css -->
+}
+
+ 
+2.2--->
+
+css selector :
+================
+html er kono ek ba ekadhik tag er upor css apply korar jonno tag gullo k select korar proyojon pore tar jonno koyek ti selector use hoy jotha :
+
+element selector :
+------------------
+tag select kore j selection kora hoy tak element selector bole
+Example : 
+html :
+<p>It's element selector</p>
+css : 
+p{
+    color: green;
+}
+
+2.3-->
+
+class selector :
+---------------
+ek ba ekadhik tag k select korar jonno j selection kora hoy tak class selector bole
+Example : 
+html :
+<p class="first">It's class selector</p>
+<p class="first">It's class selector</p>
+<p class="first">It's class selector</p>
+css :
+.first{
+    color: red ;
+}
+
+id selector :
+-------------
+bishes ekti tag k select korar jonno bebohar hoy
+Example : 
+html: 
+<p id="second">It's id selector</p>
+css : 
+#second{
+    color : blue;
+}
+
+universal selector :
+--------------------
+html er somosto kisu k select korar jonno ei selector use hoy
+Example : 
+html :
+ all html
+css :
+*{
+    margin:0;
+    padding:0;
+}
+grouping selector & attribute selectors :
+-----------------------------------------
+group kore select korar jonno use hoy
+Example : 
+html :
+<h1> it's grouping selector</h1>
+<p> it's grouping selector</p>
+<span> it's grouping selector</span>
+css :
+h1,p,span{
+    color: gold;
+}
+attribute select korar jonno j selector use hoy tak attribute selectors bole
+Example : 
+html :
+<form>
+    <label for="name"></label>
+    <input type="text" id="name" required>
+    <input type="submit" value="submit">
+</form>
+css :
+input[type="submit"]{
+    background-color: navy;
+    color: white;
+}
+input[required]{
+    border:1px solid red;
+}
+
+2.4-->
+
+m-m-Example.html
+
+2.5-->
+
+css box model:
+==============
+1.content
+2.border
+3.margin
+4.padding
+5.width & height(optinol)
+
+border :
+--------
+content er 4 pasher shimana k border bole
+border-wide: ;
+border-style: ;
+border-color: ;
+border: wide style color ;
+Example :
+border: 20px solid red;<!-- 4 pashe 20 px kore somantoral akare red color hoye jayga nibe -->
+border-radious:; <!-- ei ta border k value onujay 4 pash theke gol kore -->
+Example:
+border-radious: 20px;<!--  border k 4 pash theke 20px gol korbe -->
+
+margin : 
+--------
+ekti content theke opor r ekti content er durotto k margin bole
+margin-top:;
+margin-right:;
+margin-bottom:;
+margin-left:;
+margin: value;
+Example:
+margin:10px;<!-- 4 pashe 10 px kore jayga nie sore jabe-->
+margin: top right bottom left;
+Example:
+margin:10px 20px 30px 40px;<!-- top theke 10px right theke 20px bottom theke 30px left theke 40px-->
+margin: top left&right bottom ;
+Example: 
+margin: 10px 20px 30px<!-- top theke 10px right&left theke 20px bottom theke 30px -->
+margin: top&bottom left&right  ;
+Example: 
+margin: 10px 20px;<!-- top&bottom theke 10px right&left theke 20px  -->
+
+2.6-->
+
+padding :
+---------
+content & margin er vitor jayga toyri kore 
+padding-top:;
+padding-right:;
+padding-bottom:;
+padding-left:;
+padding: value;
+Example:
+padding:10px;<!-- 4 pashe 10 px kore jayga  toyri korbe-->
+padding: top right bottom left;
+Example:
+padding:10px 20px 30px 40px;<!-- top theke 10px right theke 20px bottom theke 30px left theke 40px-->
+padding: top left&right bottom ;
+Example: 
+padding: 10px 20px 30px<!-- top theke 10px right&left theke 20px bottom theke 30px -->
+padding: top&bottom left&right  ;
+Example: 
+padding: 10px 20px;<!-- top&bottom theke 10px right&left theke 20px  -->
+
+2.7-->
+
+box-shadow : x y opaciti 0 color;
+ekti content er shadow create korar jonno use hoy ei proparty
+Example : 
+box-shadow: 7px 8px 9px 0 black;<!-- x okkho borabor 7px y okkho borabor 8px ghonotto 9px color black-->
+
+2.8-->
+background-image:
+background a image bebohar er jonno css proparty ei ta 
+Examle :
+background-image:url('image');
+background-repeat: no-repeat;<!-- bg-image repeat hoyle   -->
+background-repeat: repeat-x;<!-- bg-image repeat hobe x okkho borabor   -->
+background-repeat: repeat-y;<!-- bg-image repeat hobe y okkho borabor  -->
+background-size: cover;<!-- background size cover korar jonno-->
+background-size: content;<!-- background size content k cover korar jonno-->
+
+2.9-->
